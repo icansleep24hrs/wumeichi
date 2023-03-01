@@ -6,7 +6,7 @@ const slideShow = (() => {
             setTimeout(() => {
                 console.log(slidesArray[i]);
             }, 2000 * i)
-        }g
+        }
     }
 return {
     slidesArray,
@@ -15,3 +15,4 @@ return {
 })();
 
 slideShow.displaySlides();
+setInterval(slideShow.displaySlides, 10000);
