@@ -1,24 +1,29 @@
 // slideshow module.
 const slideShow = (() => {
-    const backgroundDiv = document.querySelector('body');
-    const slide1 = 'url(pics/sugar-apple.jpg)';
-    const slide2 = 'url(pics/untitled-2022.jpg)';
-    const slide3 = 'url(pics/yxx-3.jpg)';
-    const slide4 = 'url(pics/yxx-the-flares-4.jpg)';
-    const slide5 = 'url(pics/yxx-the-flares-6.jpg)';
-    const slidesArray = [slide1, slide2, slide3, slide4, slide5];
-    function displaySlides() {
+    const slide1 = document.querySelector('.slide-1');
+    const slide2 = document.querySelector('.slide-2');
+    const slide3 = document.querySelector('.slide-3');
+    const slide4 = document.querySelector('.slide-4');
+    const slide5 = document.querySelector('.slide-5');
+    const slidesArray = [slide5, slide4, slide3, slide2, slide1];
+    function setSlideOpacity() {
         for (let i = 0; i < slidesArray.length; i++) {
-            setTimeout(() => {
-                backgroundDiv.style.backgroundImage = slidesArray[i];
-            }, 5000 * i)
+                slidesArray[i].style.opacity = 1;
+                slidesArray[i].style.zIndex = i + 1;
         }
     }
+    function changeOpacity() {
+        for (let i = 0; i < slidesArray.length; i++) {
+            if (slidesArray[i].style.zIndex === '5') {
+                slidesArray[i].style.opacity -= 0.01;
+            }
+        }
+    }
+    setSlideOpacity();
+    setInterval(changeOpacity, 30);
 return {
     slidesArray,
-    displaySlides
 }
 })();
 
-slideShow.displaySlides();
-setInterval(slideShow.displaySlides, 25000);
+// setInterval(slideShow.displaySlides, 25000);

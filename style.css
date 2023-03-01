@@ -2,6 +2,17 @@ body {
     margin: 0px;
 }
 
+.slideshow-div {
+    width: 200px;
+    height: 200px;
+}
+
+.slideshow-div > img {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+}
+
 .nav-head {
     display: flex;
     justify-content: space-between;
