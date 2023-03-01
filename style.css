@@ -1,0 +1,15 @@
+body {
+    margin: 0px;
+}
+
+.nav-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px 20px;
+}
+
+.header-links {
+    display: flex;
+    gap: 60px;
+}
