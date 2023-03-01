@@ -1,10 +1,11 @@
 // slideshow module.
 const slideShow = (() => {
-    const slidesArray = [1, 2, 3, 4, 5];
+    const backgroundDiv = document.querySelector('body');
+    const slidesArray = ['red', 'green', 'blue', 'yellow', 'black'];
     function displaySlides() {
         for (let i = 0; i < slidesArray.length; i++) {
             setTimeout(() => {
-                console.log(slidesArray[i]);
+                backgroundDiv.style.backgroundColor = slidesArray[i];
             }, 2000 * i)
         }
     }
@@ -14,5 +15,5 @@ return {
 }
 })();
 
-slideShow.displaySlides();
-setInterval(slideShow.displaySlides, 10000);
+// slideShow.displaySlides();
+// setInterval(slideShow.displaySlides, 10000);
