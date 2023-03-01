@@ -9,13 +9,19 @@ const slideShow = (() => {
     function setSlideOpacity() {
         for (let i = 0; i < slidesArray.length; i++) {
                 slidesArray[i].style.opacity = 1;
-                slidesArray[i].style.zIndex = i + 1;
         }
+        console.log(slidesArray);
     }
     function changeOpacity() {
         for (let i = 0; i < slidesArray.length; i++) {
+            slidesArray[i].style.zIndex = i + 1;
             if (slidesArray[i].style.zIndex === '5') {
                 slidesArray[i].style.opacity -= 0.01;
+            }
+            if (slidesArray[i].style.zIndex === '5' && slidesArray[i].style.opacity <= 0) {
+                slidesArray.unshift(...slidesArray.splice(i, 1));
+                slidesArray[i].style.zIndex = i + 1;
+                slidesArray[0].style.opacity = 1;
             }
         }
     }
