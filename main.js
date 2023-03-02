@@ -39,5 +39,8 @@ const slideShow = (() => {
         slidesArray[0].style.opacity = 1;
     }
     setSlideOpacity();
-    setInterval(changeSlides, 5000);
+    return {
+        changeSlides
+    }
 })();
+setInterval(slideShow.changeSlides, 4000);
