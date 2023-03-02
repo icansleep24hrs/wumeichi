@@ -11,9 +11,9 @@ const slideShow = (() => {
                 slidesArray[i].style.opacity = 1;
         }
     }
-    function test() {
-        return new Promise((x, y) => {
-            const z = setInterval(changeOpacity, 30);
+    function transitionSlides() {
+        return new Promise((x) => {
+            const opacityInterval = setInterval(changeOpacity, 15);
             function changeOpacity() {
                 for (let i = 0; i < slidesArray.length; i++) {
                     slidesArray[i].style.zIndex = i + 1;
@@ -21,23 +21,23 @@ const slideShow = (() => {
                         slidesArray[i].style.opacity -= 0.01;
                     }
                     if (slidesArray[i].style.opacity <= 0) {
-                        clearInterval(z);
+                        clearInterval(opacityInterval);
                         x();
                     }
                 }
             }
         })
     }
-    async function switchSlides() {
+    async function changeSlides() {
         for (let i = 0; i < slidesArray.length; i++) {
             if (slidesArray[i].style.zIndex === '5' && slidesArray[i].style.opacity <= 0) {
                 slidesArray.unshift(...slidesArray.splice(i, 1));
                 slidesArray[i].style.zIndex = i + 1;
             }
         }
-        await test();
+        await transitionSlides();
         slidesArray[0].style.opacity = 1;
     }
     setSlideOpacity();
-    setInterval(switchSlides, 5000);
+    setInterval(changeSlides, 5000);
 })();
