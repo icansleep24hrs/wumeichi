@@ -10,7 +10,6 @@ const slideShow = (() => {
         for (let i = 0; i < slidesArray.length; i++) {
                 slidesArray[i].style.opacity = 1;
         }
-        console.log(slidesArray);
     }
     function changeOpacity() {
         for (let i = 0; i < slidesArray.length; i++) {
