@@ -27,9 +27,4 @@ const slideShow = (() => {
     }
     setSlideOpacity();
     setInterval(changeOpacity, 30);
-return {
-    slidesArray,
-}
 })();
-
-// setInterval(slideShow.displaySlides, 25000);
