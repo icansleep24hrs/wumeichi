@@ -16,16 +16,23 @@ a {
 
 a:link {
     text-decoration: none;
+}
+
+li > a:link {
     font-weight: 100;
 }
 
-.nav-head {
+.nav-head, .other-nav-head {
     z-index: 6;
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin: 5px 20px 0px;
     grid-area: 1 / 1 / 2 / 3;
+}
+
+.other-nav-head > a, .other-nav-head > ul > li > a {
+    color: black;
 }
 
 .artist-name {
