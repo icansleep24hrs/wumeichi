@@ -17,6 +17,10 @@ const slideShow = (() => {
             if (slidesArray[i].style.zIndex === '5') {
                 slidesArray[i].style.opacity -= 0.01;
             }
+        }
+    }
+    function switchSlides() {
+        for (let i = 0; i < slidesArray.length; i++) {
             if (slidesArray[i].style.zIndex === '5' && slidesArray[i].style.opacity <= 0) {
                 slidesArray.unshift(...slidesArray.splice(i, 1));
                 slidesArray[i].style.zIndex = i + 1;
@@ -26,4 +30,5 @@ const slideShow = (() => {
     }
     setSlideOpacity();
     setInterval(changeOpacity, 30);
+    setInterval(switchSlides, 30);
 })();
