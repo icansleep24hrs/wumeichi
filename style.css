@@ -69,7 +69,7 @@ li > a:link {
     grid-area: 2 / 1 / 3 / 3;
     margin: 0px 20px 0px;
     display: grid;
-    grid-template-columns: 2fr 2fr 6fr 1fr;
+    grid-template-columns: 2fr 8fr 2fr;
     grid-template-rows: 4fr 50px 5fr 1fr;
     font-size: 0.8rem;
 }
@@ -85,12 +85,12 @@ li > a:link {
 
 
 .inner-profile-div {
-    grid-column: 2 / 4;
+    grid-column: 2 / 3;
     grid-row: 1 / 2;
     margin: 80px 0px 50px;
 }
 
-.chinese-profile, .english-profile, .inner-resume-sections, .resume-dates, .resume-content, .contact-main {
+.chinese-profile, .english-profile, .resume-sections, .resume-dates, .resume-content, .contact-main {
     font-weight: 100;
 }
 
@@ -121,8 +121,11 @@ li > a:link {
     align-self: center;
 }
 
-.resume-sections, .resume-dates, .resume-content {
+.resume-container {
+    grid-column: 1 / 4;
     grid-row: 3 / 4;
+    display: grid;
+    grid-template-columns: 2fr 4fr 4fr 2fr;
 }
 .contact-main {
     grid-area: 2 / 1 / 3 / 3;
