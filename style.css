@@ -5,12 +5,12 @@ body {
 }
 
 .main-body, .contact-body {
-    grid-template-rows: 1fr 6fr;
+    grid-template-rows: 50px 6fr;
     grid-template-columns: 1fr 1fr;
 }
 
 .about-body {
-    grid-template-rows: 1fr 6fr;
+    grid-template-rows: 50px 1fr;
     grid-template-columns: 1fr 4fr;
 }
 
@@ -65,25 +65,29 @@ li > a:link {
     height: 100%;
 }
 
-.profile-div, .chinese-resume-div {
-    font-size: 0.8rem;
-    display: grid;
-}
-
-.profile-div {
+.about-main {
     grid-area: 2 / 1 / 3 / 3;
-    margin: 100px 20px 0px;
-    grid-template-columns: 1fr 6fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    margin: 0px 20px 0px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 6fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    font-size: 0.8rem;
 }
 
-.chinese-resume-div {
-    grid-column: 1 / 3;
-    grid-template-columns: 1fr 2fr 3fr 1fr;
+.profile-title, .resume-sections {
+    grid-column: 1 / 2;
 }
 
 .profile-title {
-    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    margin-top: 80px;
+}
+
+
+.inner-profile-div {
+    grid-column: 2 / 4;
+    grid-row: 1 / 2;
+    margin: 80px 0px 50px;
 }
 
 .chinese-profile, .english-profile, .inner-resume-sections, .resume-dates, .resume-content, .contact-main {
@@ -102,17 +106,29 @@ li > a:link {
 
 .english-profile {
     padding-top: 10px;
+
+}
+
+.content-divider {
+    grid-column: 1 / 5;
+    grid-row: 1 / 2;
+    border-bottom: 1px solid lightgray;
+}
+
+.resume-sections, .resume-dates, .resume-content {
+    margin-top: 50px;
 }
 
 .resume-sections {
-    margin-left: 20px;
+    grid-row: 2 / 3;
 }
 
 .contact-main {
     grid-area: 2 / 1 / 3 / 3;
     font-size: 0.8rem;
-    margin: 100px 0px 0px 20px;
+    margin: 0px 0px 0px 20px;
     display: flex;
     flex-direction: column;
     gap: 30px;
+    margin-top: 80px;
 }
