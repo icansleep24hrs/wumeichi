@@ -1,9 +1,17 @@
-body, .other-body {
+body {
     margin: 0px;
     font-family: 'Roboto', sans-serif;
     display: grid;
+}
+
+.main-body {
     grid-template-rows: 1fr 6fr;
     grid-template-columns: 1fr 1fr;
+}
+
+.about-body {
+    grid-template-rows: 1fr 6fr;
+    grid-template-columns: 1fr 4fr;
 }
 
 ul{
@@ -22,7 +30,7 @@ li > a:link {
     font-weight: 100;
 }
 
-.nav-head, .other-nav-head {
+.main-head, .about-head {
     z-index: 6;
     display: flex;
     justify-content: space-between;
@@ -31,7 +39,7 @@ li > a:link {
     grid-area: 1 / 1 / 2 / 3;
 }
 
-.other-nav-head > a, .other-nav-head > ul > li > a {
+.about-head > a, .about-head > ul > li > a {
     color: black;
 }
 
