@@ -6,7 +6,10 @@ body {
 
 .main-body, .contact-body {
     grid-template-rows: 50px 6fr;
-    grid-template-columns: 1fr 1fr;
+}
+
+.contact-body {
+    grid-template-columns: 2fr 7fr 2fr;
 }
 
 .about-body {
@@ -36,7 +39,14 @@ li > a:link {
     justify-content: space-between;
     align-items: center;
     margin: 5px 20px 0px;
+}
+
+.main-head, .about-head {
     grid-area: 1 / 1 / 2 / 3;
+}
+
+.contact-head {
+    grid-area: 1 / 1 / 2 / 4;
 }
 
 .about-head a, .contact-head a {
@@ -160,7 +170,7 @@ li > a:link {
 }
 
 .contact-main {
-    grid-area: 2 / 1 / 3 / 3;
+    grid-area: 2 / 2 / 3 / 3;
     font-size: 0.8rem;
     margin: 0px 0px 0px 20px;
     display: flex;
