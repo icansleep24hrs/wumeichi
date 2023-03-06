@@ -8,13 +8,13 @@ body {
     grid-template-rows: 50px 6fr;
 }
 
-.contact-body {
-    grid-template-columns: 2fr 7fr 2fr;
-}
-
 .about-body {
     grid-template-rows: 50px 1fr;
     grid-template-columns: 1fr 4fr;
+}
+
+.contact-body {
+    grid-template-columns: 2fr 7fr 2fr;
 }
 
 ul{
@@ -79,6 +79,23 @@ li > a:link {
     height: 100%;
 }
 
+.work-main {
+    grid-column: 1 / 3;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+}
+
+.work-link-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#miro-container {
+    grid-column: 1 / 3;
+}
+
 .about-main {
     grid-area: 2 / 1 / 3 / 3;
     margin: 0px 20px 0px;
@@ -116,7 +133,6 @@ li > a:link {
 
 .english-profile {
     padding-top: 10px;
-
 }
 
 .content-divider {
