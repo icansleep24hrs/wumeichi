@@ -131,7 +131,7 @@ li > a:link {
     grid-column: 1 / 4;
     grid-row: 3 / 4;
     display: grid;
-    grid-template-rows: 2fr 6fr 3fr 1fr;
+    
     gap: 30px;
 }
 
