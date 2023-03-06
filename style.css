@@ -49,8 +49,12 @@ li > a:link {
     grid-area: 1 / 1 / 2 / 4;
 }
 
-.work-head a, .about-head a, .contact-head a {
+.work-head a, .about-head a, .contact-head a, .work-main a {
     color: black;
+}
+
+.work-main a:hover {
+    border-bottom: 1px solid black;
 }
 
 .artist-name {
