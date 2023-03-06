@@ -53,8 +53,8 @@ li > a:link {
     color: black;
 }
 
-.work-main a:hover {
-    border-bottom: 1px solid black;
+.work-main .word-link:hover {
+    text-decoration: underline;
 }
 
 .artist-name {
@@ -84,12 +84,19 @@ li > a:link {
     display: grid;
     grid-template-columns: 1fr 1fr;
     justify-items: center;
+    row-gap: 20px;
+    margin-top: 60px;
 }
 
 .work-link-container {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.work-link-container img {
+    width: 300px;
+    height: 200px;
 }
 
 #miro-container {
@@ -101,20 +108,20 @@ li > a:link {
     margin: 0px 20px 0px;
     display: grid;
     grid-template-columns: 2fr 6fr 4fr;
-    grid-template-rows: 300px 50px 5fr 1fr;
+    grid-template-rows: 285px 50px 5fr 1fr;
     font-size: 0.8rem;
 }
 
 .profile-title {
     grid-column: 1 / 2;
     grid-row: 1 / 2;
-    margin-top: 80px;
+    margin-top: 60px;
 }
 
 .inner-profile-div {
     grid-column: 2 / 3;
     grid-row: 1 / 2;
-    margin: 80px 0px 0px;
+    margin-top: 60px;
 }
 
 .chinese-profile, .english-profile, .resume-section, .resume-dates, .resume-content, .contact-main {
@@ -128,11 +135,11 @@ li > a:link {
 
 .chinese-profile {
     border-bottom: 1px solid lightgray;
-    padding-bottom: 10px;
+    padding-bottom: 20px;
 }
 
 .english-profile {
-    padding-top: 10px;
+    padding-top: 20px;
 }
 
 .content-divider {
@@ -151,8 +158,7 @@ li > a:link {
     grid-column: 1 / 4;
     grid-row: 3 / 4;
     display: grid;
-    
-    gap: 30px;
+    row-gap: 30px;
 }
 
 .resume-section {
@@ -204,5 +210,5 @@ li > a:link {
     display: flex;
     flex-direction: column;
     gap: 30px;
-    margin-top: 80px;
+    margin-top: 60px;
 }
