@@ -96,7 +96,7 @@ li > a:link {
     margin: 80px 0px 0px;
 }
 
-.chinese-profile, .english-profile, .solo-container, .resume-dates, .resume-content, .contact-main {
+.chinese-profile, .english-profile, .resume-section, .resume-dates, .resume-content, .contact-main {
     font-weight: 100;
 }
 
@@ -132,40 +132,41 @@ li > a:link {
     grid-row: 3 / 4;
     display: grid;
     grid-template-rows: 2fr 6fr 3fr 1fr;
+    gap: 30px;
 }
 
-.solo-container {
+.resume-section {
     display: grid;
     grid-template-columns: 2fr 3fr 4fr 2fr;
     grid-template-rows: 1fr 1fr 1fr 1fr;
-    gap: 5px;
+    gap: 8px;
 }
 
 .resume-dates {
     grid-column: 2 / 3;
 }
 
-.solo-dates {
+.section-dates {
     grid-column: 2 / 3;
 }
 
-.solo-content {
+.section-content {
     grid-column: 3 / 4;
 }
 
-#solo-content-1 {
+#section-content-1 {
     grid-row: 1 / 2;
 }
 
-#solo-content-2 {
+#section-content-2 {
     grid-row: 2 / 3;
 }
 
-#solo-content-3 {
+#section-content-3 {
     grid-row: 3 / 4;
 }
 
-#solo-content-4 {
+#section-content-4 {
     grid-row: 4 / 5;
 }
 
