@@ -213,6 +213,10 @@ li > a:link {
     margin-top: 60px;
 }
 
+.picnic-slideshow {
+    position: relative;
+}
+
 .picnic-slideshow > img {
     position: absolute;
     width: 400px;
