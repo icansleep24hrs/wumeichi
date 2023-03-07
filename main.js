@@ -1,5 +1,5 @@
 // slideshow module.
-const slideShow = (() => {
+const autoSlideShow = (() => {
     const slide1 = document.querySelector('.slide-1');
     const slide2 = document.querySelector('.slide-2');
     const slide3 = document.querySelector('.slide-3');
@@ -43,4 +43,4 @@ const slideShow = (() => {
         changeSlides
     }
 })();
-setInterval(slideShow.changeSlides, 4000);
+setInterval(autoSlideShow.changeSlides, 4000);
