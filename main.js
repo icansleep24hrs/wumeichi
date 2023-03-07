@@ -1,26 +1,22 @@
 // Automatic slideshow module for front page.
 const autoSlideShow = (() => {
-    const slide1 = document.querySelector('.slide-1');
-    const slide2 = document.querySelector('.slide-2');
-    const slide3 = document.querySelector('.slide-3');
-    const slide4 = document.querySelector('.slide-4');
-    const slide5 = document.querySelector('.slide-5');
-    const slidesArray = [slide5, slide4, slide3, slide2, slide1];
+    const mainSlides = document.querySelectorAll('.main-slideshow-div > img');
+    const mainSlidesArr = Array.from(mainSlides);
     function setSlideOpacity() {
-        for (let i = 0; i < slidesArray.length; i++) {
-                slidesArray[i].style.opacity = 1;
+        for (let i = 0; i < mainSlidesArr.length; i++) {
+                mainSlidesArr[i].style.opacity = 1;
         }
     }
     function transitionSlides() {
         return new Promise((x) => {
             const opacityInterval = setInterval(changeOpacity, 15);
             function changeOpacity() {
-                for (let i = 0; i < slidesArray.length; i++) {
-                    slidesArray[i].style.zIndex = i + 1;
-                    if (slidesArray[i].style.zIndex === '5') {
-                        slidesArray[i].style.opacity -= 0.01;
+                for (let i = 0; i < mainSlidesArr.length; i++) {
+                    mainSlidesArr[i].style.zIndex = i + 1;
+                    if (mainSlidesArr[i].style.zIndex === '5') {
+                        mainSlidesArr[i].style.opacity -= 0.01;
                     }
-                    if (slidesArray[i].style.opacity <= 0) {
+                    if (mainSlidesArr[i].style.opacity <= 0) {
                         clearInterval(opacityInterval);
                         x();
                     }
@@ -29,14 +25,14 @@ const autoSlideShow = (() => {
         })
     }
     async function changeSlides() {
-        for (let i = 0; i < slidesArray.length; i++) {
-            if (slidesArray[i].style.zIndex === '5' && slidesArray[i].style.opacity <= 0) {
-                slidesArray.unshift(...slidesArray.splice(i, 1));
-                slidesArray[i].style.zIndex = i + 1;
+        for (let i = 0; i < mainSlides.length; i++) {
+            if (mainSlidesArr[i].style.zIndex === '5' && mainSlidesArr[i].style.opacity <= 0) {
+                mainSlidesArr.unshift(...mainSlidesArr.splice(i, 1));
+                mainSlidesArr[i].style.zIndex = i + 1;
             }
         }
         await transitionSlides();
-        slidesArray[0].style.opacity = 1;
+        mainSlidesArr[0].style.opacity = 1;
     }
     setSlideOpacity();
     return {

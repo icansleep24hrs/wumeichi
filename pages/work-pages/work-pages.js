@@ -4,4 +4,5 @@ const manualSlideShow = (() => {
 })();
 
 const picnicSlides = document.querySelectorAll('.picnic-slideshow > img');
-console.log(picnicSlides);
+const picnicSlidesArr = Array.from(picnicSlides);
+console.log(picnicSlidesArr);
