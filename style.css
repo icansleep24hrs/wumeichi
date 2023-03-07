@@ -2,10 +2,15 @@ body {
     margin: 0px;
     font-family: 'Roboto', sans-serif;
     display: grid;
+    height: 100vh;
 }
 
 .main-body, .work-body, .contact-body, .work-sub-body {
     grid-template-rows: 50px 6fr;
+}
+
+.work-sub-body {
+    grid-template-columns: 1fr;
 }
 
 .about-body {
@@ -214,13 +219,19 @@ li > a:link {
 }
 
 .picnic-slideshow {
+    display: grid;
     position: relative;
+    width: 400px;
+    height: 100%;
+    justify-self: center;
+    align-self: center;
 }
 
 .picnic-slideshow > img {
     position: absolute;
-    width: 400px;
+    width: 100%;
     height: auto;
+    align-self: center;
 }
 
 .slide {
