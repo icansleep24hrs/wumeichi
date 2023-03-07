@@ -44,9 +44,3 @@ const autoSlideShow = (() => {
     }
 })();
 setInterval(autoSlideShow.changeSlides, 4000);
-
-
-// Manual slideshow for work pages.
-const manualSlideShow = (() => {
-
-})();
