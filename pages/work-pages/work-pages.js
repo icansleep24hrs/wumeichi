@@ -1,6 +1,6 @@
 // Manual slideshow for work pages.
 const manualSlideShow = (() => {
-    const slidesButton = document.querySelector('.slides-button');
+    const forwardButton = document.querySelector('.forward-button');
     const picnicSlides = document.querySelectorAll('.picnic-slideshow > img');
     const picnicSlidesArr = Array.from(picnicSlides);
 
@@ -25,5 +25,5 @@ const manualSlideShow = (() => {
     }
     setZIndex();
     changeSlides();
-    slidesButton.addEventListener('click', changeSlides);
+    forwardButton.addEventListener('click', changeSlides);
 })();
