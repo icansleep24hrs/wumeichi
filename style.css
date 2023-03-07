@@ -38,6 +38,12 @@ li > a:link {
     font-weight: 100;
 }
 
+input {
+    width: auto;
+    height: 40px;
+    opacity: 0.6;
+}
+
 .main-head, .work-head, .about-head, .contact-head, .work-sub-head {
     z-index: 6;
     display: flex;
