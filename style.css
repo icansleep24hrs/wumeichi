@@ -4,7 +4,7 @@ body {
     display: grid;
 }
 
-.main-body, .work-body, .contact-body {
+.main-body, .work-body, .contact-body, .work-sub-body {
     grid-template-rows: 50px 6fr;
 }
 
@@ -33,7 +33,7 @@ li > a:link {
     font-weight: 100;
 }
 
-.main-head, .work-head, .about-head, .contact-head {
+.main-head, .work-head, .about-head, .contact-head, .work-sub-head {
     z-index: 6;
     display: flex;
     justify-content: space-between;
@@ -41,7 +41,7 @@ li > a:link {
     margin: 5px 20px 0px;
 }
 
-.main-head, .work-head, .about-head {
+.main-head, .work-head, .about-head, .work-sub-head {
     grid-area: 1 / 1 / 2 / 3;
 }
 
@@ -49,7 +49,7 @@ li > a:link {
     grid-area: 1 / 1 / 2 / 4;
 }
 
-.work-head a, .about-head a, .contact-head a, .work-main a {
+.work-head a, .about-head a, .contact-head a, .work-main a, .work-sub-head a {
     color: black;
 }
 
