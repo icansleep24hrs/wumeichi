@@ -1,4 +1,4 @@
-// slideshow module.
+// Automatic slideshow module for front page.
 const autoSlideShow = (() => {
     const slide1 = document.querySelector('.slide-1');
     const slide2 = document.querySelector('.slide-2');
@@ -44,3 +44,9 @@ const autoSlideShow = (() => {
     }
 })();
 setInterval(autoSlideShow.changeSlides, 4000);
+
+
+// Manual slideshow for work pages.
+const manualSlideShow = (() => {
+
+})();

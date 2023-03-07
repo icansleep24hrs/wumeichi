@@ -212,3 +212,9 @@ li > a:link {
     gap: 30px;
     margin-top: 60px;
 }
+
+.picnic-slideshow > img {
+    position: absolute;
+    width: 400px;
+    height: auto;
+}
