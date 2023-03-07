@@ -2,41 +2,23 @@
 const manualSlideShow = (() => {
     const forwardButton = document.querySelector('.forward-button');
     const backButton = document.querySelector('.back-button');
-    const picnicSlides = document.querySelectorAll('.picnic-slideshow > img');
-    const picnicSlidesArr = Array.from(picnicSlides);
-
-    function setZIndex() {
-        for (let i = 0; i < picnicSlidesArr.length; i++) {
-            picnicSlidesArr[i].style.zIndex = i + 1;
-            if (!(picnicSlidesArr[i].style.zIndex === '11')) {
-                picnicSlidesArr[i].style.display = 'none';
-            }
-        }
+    const picnicSlides = document.querySelectorAll('.picnic-slideshow img');
+    let currentSlide = 0;
+    
+    function changeSlide(x) {
+        picnicSlides[currentSlide].className = 'slide';
+        currentSlide = (x + picnicSlides.length) % picnicSlides.length;
+        picnicSlides[currentSlide].className = 'slide showing';
     }
 
-    function changeSlideForward() {
-        for (let i = 0; i < picnicSlidesArr.length; i++) {
-            if (picnicSlidesArr[i].style.zIndex === '11') {
-                picnicSlidesArr[i].style.display = 'block';
-                picnicSlidesArr.unshift(...picnicSlidesArr.splice(i, 1));
-                picnicSlidesArr[i].style.zIndex = i + 1;
-                picnicSlidesArr[i].style.display = 'none';
-            }
-        }
+    function nextSlide() {
+        changeSlide(currentSlide + 1);
     }
 
-    function changeSlideBack() {
-        for (let i = 0; i < picnicSlidesArr.length; i++) {
-            if (picnicSlidesArr[i].style.zIndex === '11') {
-                picnicSlidesArr[i].style.display = 'block';
-                picnicSlidesArr.unshift(...picnicSlidesArr.splice(i, 1));
-                picnicSlidesArr[i].style.zIndex = i + 1;
-                picnicSlidesArr[i].style.display = 'none';
-            }
-        }
+    function prevSlide() {
+        changeSlide(currentSlide - 1);
     }
-    setZIndex();
-    changeSlideForward();
-    forwardButton.addEventListener('click', changeSlideForward);
-    backButton.addEventListener('click', changeSlideBack);
+
+    forwardButton.addEventListener('click', nextSlide);
+    backButton.addEventListener('click', prevSlide);
 })();

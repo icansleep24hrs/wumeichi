@@ -221,4 +221,13 @@ li > a:link {
     position: absolute;
     width: 400px;
     height: auto;
+    z-index: 1;
+}
+
+.slide {
+    opacity: 0;
+}
+
+.showing {
+    opacity: 1;
 }
