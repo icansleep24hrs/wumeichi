@@ -2,13 +2,13 @@
 const manualSlideShow = (() => {
     const forwardButton = document.querySelector('.forward-button');
     const backButton = document.querySelector('.back-button');
-    const picnicSlides = document.querySelectorAll('.picnic-slideshow img');
+    const allSlides = document.querySelectorAll('.picnic-slideshow img');
     let currentSlide = 0;
     
     function changeSlide(x) {
-        picnicSlides[currentSlide].className = 'slide';
-        currentSlide = (x + picnicSlides.length) % picnicSlides.length;
-        picnicSlides[currentSlide].className = 'slide showing';
+        allSlides[currentSlide].className = 'slide';
+        currentSlide = (x + allSlides.length) % allSlides.length;
+        allSlides[currentSlide].className = 'slide current';
     }
 
     function nextSlide() {
@@ -19,6 +19,15 @@ const manualSlideShow = (() => {
         changeSlide(currentSlide - 1);
     }
 
-    forwardButton.addEventListener('click', nextSlide);
-    backButton.addEventListener('click', prevSlide);
+    
+
+    return {
+        forwardButton,
+        backButton,
+        nextSlide,
+        prevSlide
+    }
 })();
+
+manualSlideShow.forwardButton.addEventListener('click', manualSlideShow.nextSlide);
+manualSlideShow.backButton.addEventListener('click', manualSlideShow.prevSlide);

@@ -221,7 +221,6 @@ li > a:link {
     position: absolute;
     width: 400px;
     height: auto;
-    z-index: 1;
 }
 
 .slide {
@@ -229,6 +228,6 @@ li > a:link {
     transition: opacity 2s;
 }
 
-.showing {
+.current {
     opacity: 1;
 }
