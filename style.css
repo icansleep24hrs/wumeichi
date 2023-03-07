@@ -8,7 +8,7 @@ body {
 .main-body, .work-body, .contact-body, .work-sub-body {
     grid-template-rows: 50px 6fr;
 }
-
+gi
 .work-sub-body {
     grid-template-columns: 1fr;
 }
@@ -225,7 +225,6 @@ input {
 }
 
 .picnic-slideshow {
-    display: grid;
     position: relative;
     width: 400px;
     height: 100%;
@@ -234,10 +233,10 @@ input {
 }
 
 .picnic-slideshow > img {
+    margin-top: 60px;
     position: absolute;
     width: 100%;
     height: auto;
-    align-self: center;
 }
 
 .slide {
