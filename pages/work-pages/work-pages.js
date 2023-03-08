@@ -19,8 +19,6 @@ const manualSlideShow = (() => {
         changeSlide(currentSlide - 1);
     }
 
-    
-
     return {
         forwardButton,
         backButton,
