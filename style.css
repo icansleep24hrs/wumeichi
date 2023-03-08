@@ -257,3 +257,8 @@ input {
 .current {
     opacity: 1;
 }
+
+.work-info-container {
+    grid-row: 2 / 3;
+    grid-column: 1 / 4;
+}
