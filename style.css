@@ -257,10 +257,17 @@ input {
     width: 600px;
 }
 
-.picnic-slideshow > img, .pandora-slideshow > img, .xxy-slideshow img {
+.picnic-slideshow  img, .pandora-slideshow  img, .xxy-slideshow img {
     position: absolute;
     width: 100%;
-    height: auto;
+}
+
+.picnic-slideshow img, .xxy-slideshow img {
+    height: 540px;
+}
+
+.pandora-slideshow img {
+    height: 450px;
 }
 
 .slide {
