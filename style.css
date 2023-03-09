@@ -340,7 +340,7 @@ input {
     grid-row: 3 / 4;
 }
 
-.miro-story-container {
+.miro-story-container-chinese, .miro-story-container-english {
     grid-column: 1 / 4;
     display: grid;
     grid-template-columns: 2fr 6fr 2fr;
