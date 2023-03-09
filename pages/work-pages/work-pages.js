@@ -2,7 +2,7 @@
 const manualSlideShow = (() => {
     const forwardButton = document.querySelector('.forward-button');
     const backButton = document.querySelector('.back-button');
-    const allSlides = document.querySelectorAll('.picnic-slideshow img, .pandora-slideshow img, .xxy-slideshow img');
+    const allSlides = document.querySelectorAll('.picnic-slideshow img, .pandora-slideshow img, .xxy-slideshow img, .miro-slideshow img');
     let currentSlide = 0;
     
     function changeSlide(x) {
