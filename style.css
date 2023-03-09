@@ -239,7 +239,7 @@ input {
     grid-template-rows: 510px 1fr;
 }
 
-.picnic-slideshow, .pandora-slideshow {
+.picnic-slideshow, .pandora-slideshow, .xxy-slideshow {
     margin-top: 110px;
     grid-row: 1 / 2;
     grid-column: 2 / 3;
@@ -249,7 +249,7 @@ input {
     align-self: center;
 }
 
-.picnic-slideshow {
+.picnic-slideshow, .xxy-slideshow {
     width: 360px;
 }
 
@@ -257,7 +257,7 @@ input {
     width: 600px;
 }
 
-.picnic-slideshow > img, .pandora-slideshow > img {
+.picnic-slideshow > img, .pandora-slideshow > img, .xxy-slideshow img {
     position: absolute;
     width: 100%;
     height: auto;
