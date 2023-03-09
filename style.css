@@ -75,7 +75,7 @@ input {
 
 .header-links {
     display: flex;
-    gap: 100px;
+    gap: 60px;
 }
 
 .main-slideshow-div {
