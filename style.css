@@ -272,7 +272,7 @@ input {
     opacity: 1;
 }
 
-.work-info-container, .pandora-1-info-container {
+.work-info-container, .pandora-1-info-container, .pandora-2-info-container {
     grid-row: 2 / 3;
     grid-column: 1 / 4;
     display: grid;
@@ -286,6 +286,11 @@ input {
     grid-template-rows: 1fr 1fr;
 }
 
+.pandora-2-info-container {
+    row-gap: 30px;
+    grid-template-rows: auto 1fr 5fr;
+}
+
 .chinese-work-title, .pandora-1-work-title {
     grid-row: 1 / 2;
     grid-column: 1 / 2;
@@ -296,7 +301,7 @@ input {
     grid-column: 1 / 2;
 }
 
-.chinese-work-text, .english-work-text, .pandora-1-work-text {
+.chinese-work-text, .english-work-text, .pandora-1-work-text, .pandora-story-text {
     font-weight: 100;
     color: rgb(104, 104, 104);
     grid-column: 2 / 3;
@@ -308,5 +313,14 @@ input {
 
 .english-work-text {
     grid-row: 2 / 3;
+}
+
+.pandora-story-title {
+    grid-row: 3 / 4;
+    grid-column: 1 / 2;
+}
+
+.pandora-story-text {
+    grid-row: 3 / 4;
 }
 
