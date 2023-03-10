@@ -112,7 +112,7 @@ input {
     height: 200px;
 }
 
-#miro-container, #picnic-pub-container {
+#miro-container {
     grid-column: 1 / 3;
 }
 
