@@ -418,3 +418,48 @@ input {
     color: rgb(104, 104, 104);
 }
 
+@media only screen and (max-width: 630px) {
+    .artist-name {
+        font-size: 1.6rem;
+    }
+
+    .header-links {
+        gap: 40px;
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    .artist-name {
+        font-size: 1.2rem;
+    }
+
+    .header-links {
+        gap: 20px;
+    }
+}
+
+@media only screen and (max-width: 460px) {
+    .artist-name {
+        font-size: 1rem;
+    }
+
+    .header-links {
+        font-size: 0.8rem;
+        gap: 10px;
+    }
+}
+
+@media only screen and (max-width: 370px) {
+    .main-head, .work-head, .pub-head, .about-head, .contact-head, .work-sub-head {
+        margin: 5px 10px 0px;
+    }
+
+    .artist-name {
+        font-size: 0.9rem;
+    }
+
+    .header-links {
+        font-size: 0.7rem;
+        gap: 8px;
+    }
+}
