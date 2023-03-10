@@ -427,11 +427,11 @@ input {
         gap: 40px;
     }
 
-    .work-main {
+    .work-main, .pub-main {
         grid-template-columns: 1fr;
     }
 
-    .work-link-container {
+    .work-link-container, .pub-link-container {
         grid-column: 1 / 2;
     }
 }
@@ -454,6 +454,11 @@ input {
     .header-links {
         font-size: 0.8rem;
         gap: 10px;
+    }
+
+    .pub-link-container img {
+        width: 300px;
+        height: 200px;
     }
 }
 
