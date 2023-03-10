@@ -45,7 +45,7 @@ input {
 }
 
 .main-head, .work-head, .pub-head, .about-head, .contact-head, .work-sub-head {
-    z-index: 6;
+    z-index: 12;
     display: flex;
     justify-content: space-between;
     align-items: center;
