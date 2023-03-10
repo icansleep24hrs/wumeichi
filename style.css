@@ -64,8 +64,21 @@ input {
     grid-area: 1 / 1 / 2 / 4;
 }
 
-.work-head a, .pub-head a, .about-head a, .contact-head a, .work-main a, .work-sub-head a, .pub-main a {
+.work-head a, 
+.pub-head a, 
+.about-head a, 
+.contact-head a, 
+.work-main a, 
+.work-sub-head a, 
+.pub-main a {
     color: black;
+}
+
+.work-head .work-head-link, 
+.pub-head .pub-head-link, 
+.about-head .about-head-link, 
+.contact-head .contact-head-link {
+    opacity: 0.2;
 }
 
 .work-main .word-link:hover, .pub-main .word-link:hover {
