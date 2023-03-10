@@ -9,6 +9,10 @@ body {
     grid-template-rows: 50px 6fr;
 }
 
+.main-body {
+    overflow: hidden;
+}
+
 .work-sub-body {
     grid-template-columns: 1fr;
 }
@@ -79,15 +83,13 @@ input {
 }
 
 .main-slideshow-div {
-    width: 100%;
-    height: 100%;
     grid-area: 1 / 1 / 3 / 3;
 }
 
 .main-slideshow-div > img {
     position: absolute;
-    width: 100%;
-    height: 100%;
+    width: 1500px;
+    height: auto;
 }
 
 .work-main, .pub-main {
