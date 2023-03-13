@@ -483,6 +483,11 @@ input {
         grid-template-rows: repeat(4, auto);
     }
 
+    .pub-main {
+        grid-template-rows: repeat(2, 263px);
+        row-gap: 0px;
+    }
+
     .profile-title {
         grid-row: 1 / 2;
         margin-bottom: 10px;
