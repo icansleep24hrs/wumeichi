@@ -470,6 +470,10 @@ input {
         height: 200px;
     }
 
+    .work-main, .profile-title, .contact-main {
+        margin-top: 20px;
+    }
+
     .about-main {
         grid-template-columns: 1fr;
         grid-template-rows: repeat(4, auto);
