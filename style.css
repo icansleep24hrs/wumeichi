@@ -535,6 +535,14 @@ input {
         grid-template-rows: 460px auto auto;
     }
 
+    .pandora-main, .miro-main {
+        grid-template-rows: 290px auto auto;
+    }
+
+    #love-main{
+        grid-template-rows: 350px auto auto;
+    }
+
     .picnic-slideshow, .pandora-slideshow, .xxy-slideshow, .miro-slideshow {
         grid-column: 1 / 2;
         grid-row: 1 / 2;
@@ -545,7 +553,14 @@ input {
         margin-top: 40px;
     }
 
-    .picnic-slideshow img, .xxy-slideshow img {
+    .pandora-slideshow, .miro-slideshow {
+        width: 310px;
+    }
+
+    .picnic-slideshow img, 
+    .xxy-slideshow img, 
+    .pandora-slideshow img, 
+    .miro-slideshow img{
         height: auto;
     }
 
