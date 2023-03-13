@@ -112,7 +112,9 @@ input {
 
 .main-slideshow-div > img {
     position: absolute;
-    width: 1500px;
+    width: 100%;
+    max-width: 3000px;
+    min-width: 1900px;
     height: auto;
 }
 
