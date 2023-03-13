@@ -711,15 +711,15 @@ input {
 
     .picnic-pub-info-container {
         align-self: start;
-        margin-left: 20px;
+        margin: 0px 20px;
         grid-template-rows: 1fr;
     }
 
-    #picnic-pub-title, #picnic-pub-text {
+    #picnic-pub-title, #picnic-pub-text, #love-pub-title, #love-pub-text {
         grid-row: 1 / 2;
     }
 
-    #picnic-pub-text {
+    #picnic-pub-text, #love-pub-text {
         grid-column: 2 / 3;
     }
 }
