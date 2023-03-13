@@ -517,6 +517,37 @@ input {
     .resume-section {
         grid-template-columns: 3fr 2fr 4fr 4fr;
     }
+
+    .work-sub-main, .pandora-main, .miro-main {
+        grid-template-columns: 1fr;
+    }
+
+    .picnic-slideshow, .pandora-slideshow, .xxy-slideshow, .miro-slideshow {
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+    }
+
+    .back-button, .forward-button {
+        grid-column: 1 / 2;
+        grid-row: 2 / 3;
+    }
+
+    .back-button {
+        margin-right: 80px;
+        z-index: 1;
+    }
+
+    .forward-button {
+        margin-left: 80px;
+    }
+
+    .work-info-container, 
+    .pandora-1-info-container, 
+    .pandora-2-info-container, 
+    .miro-info-container,
+    .picnic-pub-info-container {
+        grid-row: 3 / 4;
+    }
 }
 
 @media only screen and (max-width: 370px) {
