@@ -548,6 +548,85 @@ input {
     .picnic-pub-info-container {
         grid-row: 3 / 4;
     }
+
+    .work-info-container {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, auto);
+        row-gap: 0px;
+    }
+
+    .pandora-1-info-container {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2, auto);
+        row-gap: 10px;
+    }
+
+    .pandora-2-info-container {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6, auto);
+        row-gap: 0px;
+    }
+
+    .chinese-work-title, 
+    .chinese-work-text, 
+    .english-work-title, 
+    .english-work-text, 
+    .pandora-1-work-title, 
+    .pandora-1-work-text, 
+    .pandora-story-title, 
+    .pandora-story-text {
+        grid-column: 1 / 2;
+    }
+
+    .chinese-work-title {
+        grid-row: 1 / 2;
+        margin-bottom: 10px;
+    }
+
+    .english-work-title {
+        grid-row: 3 / 4;
+        margin: 20px 0px 10px;
+    }
+
+    .chinese-work-text {
+        grid-row: 2 / 3;
+    }
+
+    .english-work-text {
+        grid-row: 4 / 5;
+    }
+
+    .pandora-1-work-title {
+        grid-row: 1 / 2;
+    }
+
+    .pandora-1-work-text {
+        grid-row: 2 / 3;
+    }
+
+    .pandora-story-title {
+        grid-row: 5 / 6;
+    }
+
+    .pandora-story-text {
+        grid-row: 6 / 7;
+    }
+
+    #pandora-work-chinese-title {
+        margin-bottom: 0px;
+    }
+
+    #pandora-work-english-title {
+        margin: 10px 0px 0px;
+    }
+
+    .pandora-story-title {
+        margin-top: 20px;
+    }
+
+    .pandora-line-break {
+        display: none;
+    }
 }
 
 @media only screen and (max-width: 370px) {
@@ -562,6 +641,13 @@ input {
     .header-links {
         font-size: 0.7rem;
         gap: 8px;
+    }
+
+    .work-info-container, 
+    .pandora-1-info-container, 
+    .pandora-2-info-container, 
+    .miro-info-container {
+        margin: 30px 0px 30px 10px;
     }
 
     .about-main, .contact-main {
