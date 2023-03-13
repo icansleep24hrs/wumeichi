@@ -527,7 +527,7 @@ input {
     }
 
     .work-sub-main {
-        grid-template-rows: 450px auto auto;
+        grid-template-rows: 460px auto auto;
     }
 
     .picnic-slideshow, .pandora-slideshow, .xxy-slideshow, .miro-slideshow {
