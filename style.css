@@ -536,7 +536,7 @@ input {
     }
 
     .pandora-main, .miro-main {
-        grid-template-rows: 240px auto auto;
+        grid-template-rows: 240px 60px auto;
     }
 
     #love-main{
@@ -628,7 +628,8 @@ input {
     .miro-work-title, 
     .miro-work-text, 
     .miro-story-container-chinese, 
-    .miro-story-container-english {
+    .miro-story-container-english, 
+    .picnic-pub-info-container {
         grid-column: 1 / 2;
     }
 
@@ -707,6 +708,20 @@ input {
     .miro-story-text-chinese-3 {
         margin-bottom: 20px;
     }
+
+    .picnic-pub-info-container {
+        align-self: start;
+        margin-left: 20px;
+        grid-template-rows: 1fr;
+    }
+
+    #picnic-pub-title, #picnic-pub-text {
+        grid-row: 1 / 2;
+    }
+
+    #picnic-pub-text {
+        grid-column: 2 / 3;
+    }
 }
 
 @media only screen and (max-width: 370px) {
@@ -730,7 +745,7 @@ input {
         margin-left: 10px;
     }
 
-    .about-main, .contact-main {
+    .about-main, .contact-main, .picnic-pub-info-container {
         margin-left: 10px;
     }
 
