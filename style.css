@@ -536,21 +536,21 @@ input {
     }
 
     .pandora-main, .miro-main {
-        grid-template-rows: 290px auto auto;
+        grid-template-rows: 240px auto auto;
     }
 
     #love-main{
-        grid-template-rows: 350px auto auto;
+        grid-template-rows: 310px auto auto;
     }
 
     .picnic-slideshow, .pandora-slideshow, .xxy-slideshow, .miro-slideshow {
         grid-column: 1 / 2;
         grid-row: 1 / 2;
+        margin-top: 40px;
     }
 
     .picnic-slideshow, .xxy-slideshow {
         width: 280px;
-        margin-top: 40px;
     }
 
     .pandora-slideshow, .miro-slideshow {
