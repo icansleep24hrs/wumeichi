@@ -117,7 +117,7 @@ input {
     flex-shrink: 0;
     position: absolute;
     width: 100%;
-    max-width: 3000px;
+    max-width: 4500px;
     min-width: 1510px;
     height: auto;
 }
