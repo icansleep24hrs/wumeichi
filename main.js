@@ -12,7 +12,6 @@ const autoSlideShow = (() => {
             const opacityInterval = setInterval(changeOpacity, 15);
             function changeOpacity() {
                 for (let i = 0; i < mainSlidesArr.length; i++) {
-                    mainSlidesArr[i].style.display = 'block';
                     mainSlidesArr[i].style.zIndex = i + 1;
                     if (mainSlidesArr[i].style.zIndex === '11') {
                         mainSlidesArr[i].style.opacity -= 0.01;
@@ -40,4 +39,4 @@ const autoSlideShow = (() => {
         changeSlides
     }
 })();
-setInterval(autoSlideShow.changeSlides, 800);
+setInterval(autoSlideShow.changeSlides, 3000);
