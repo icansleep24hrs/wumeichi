@@ -472,11 +472,11 @@ input {
 
     .slide-4 {
         left: -728px;
-        top: -110px;
+        top: -230px;
     }
 
     .slide-5 {
-        left: -700px;
+        left: -550px;
         top: -100px;
     }
 
@@ -486,6 +486,7 @@ input {
 
     .slide-7 {
         top: -100px;
+        left: -700px;
     }
 
     .slide-9 {
@@ -771,7 +772,7 @@ input {
     }
 
     .slide-3 {
-        left: -600px;
+        left: -580px;
         top: -200px;
     }
 
@@ -781,7 +782,8 @@ input {
     }
 
     .slide-8 {
-        top: -200px;
+        right: -350px;
+        top: -100px;
     }
 
     .slide-9 {
@@ -790,7 +792,7 @@ input {
     }
 
     .slide-10 {
-        right: -300px;
+        right: -500px;
         top: -200px;
     }
 

@@ -40,4 +40,4 @@ const autoSlideShow = (() => {
         changeSlides
     }
 })();
-setInterval(autoSlideShow.changeSlides, 3000);
+setInterval(autoSlideShow.changeSlides, 800);
