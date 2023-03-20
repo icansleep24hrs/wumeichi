@@ -149,12 +149,7 @@ input {
     align-items: center;
 }
 
-.work-link-container img {
-    width: 300px;
-    height: 200px;
-}
-
-.pub-link-container img {
+.work-link-container img, .pub-link-container img {
     width: 350px;
     height: 250px;
 }
@@ -462,6 +457,13 @@ input {
     margin-bottom: 30px;
 }
 
+@media only screen and (max-width: 759px) {
+    .work-link-container img, .pub-link-container img {
+        width: 100%;
+        height: auto;
+    }
+}
+
 @media only screen and (max-width: 630px) {
     .artist-name {
         font-size: 1.6rem;
@@ -547,19 +549,9 @@ input {
         gap: 10px;
     }
 
-    .pub-link-container img {
-        width: 300px;
-        height: 200px;
-    }
-
     .about-main {
         grid-template-columns: 1fr;
         grid-template-rows: repeat(4, auto);
-    }
-
-    .pub-main {
-        grid-template-rows: repeat(2, 263px);
-        row-gap: 0px;
     }
 
     .profile-title {
