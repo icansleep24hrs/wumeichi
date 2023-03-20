@@ -353,8 +353,8 @@ input {
 }
 
 .miro-info-container {
-    row-gap: 30px;
-    grid-template-rows: auto 1fr;
+    row-gap: 0px;
+    grid-template-rows: auto auto;
 }
 
 .picnic-pub-info-container {
@@ -407,6 +407,10 @@ input {
     grid-row: 3 / 4;
 }
 
+.miro-work-title, .miro-work-text {
+    margin-bottom: 10px;
+}
+
 .miro-story-container-chinese, .miro-story-container-english {
     grid-column: 1 / 4;
     display: grid;
@@ -429,9 +433,14 @@ input {
 .miro-story-text-chinese-3, 
 .miro-story-text-english-1, 
 .miro-story-text-english-2, 
-.miro-story-text-english-3 {
+.miro-story-text-english-3,
+.miro-info-english {
     font-weight: 100;
     color: rgb(104, 104, 104);
+}
+
+.miro-story-title-chinese-3, .miro-story-text-chinese-3 {
+    margin-bottom: 30px;
 }
 
 @media only screen and (max-width: 630px) {
@@ -746,7 +755,8 @@ input {
     .miro-story-text-chinese-1, 
     .miro-story-text-chinese-2, 
     .miro-story-text-english-1,
-    .miro-story-text-english-2 {
+    .miro-story-text-english-2,
+    .miro-info-english {
         margin-bottom: 5px;
     }
 
