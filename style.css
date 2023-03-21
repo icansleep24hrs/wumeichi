@@ -511,10 +511,20 @@ input {
     .xxy-sub-main {
         grid-template-columns: 1fr;
         grid-template-rows: repeat(4, auto);
+        column-gap: 0px;
+    }
+
+    .xxy-link-container img {
+        height: auto;
+        width: 450px;
     }
 
     #xxy-info-container {
         grid-row: 4 / 5;
+    }
+
+    #xxy-top-link {
+        margin-top: 100px;
     }
 
     .contact-main {
@@ -851,6 +861,11 @@ input {
     .slide-11 {
         top: -200px;
     }
+
+    .xxy-link-container img {
+        height: auto;
+        width: 350px;
+    }
 }
 
 @media only screen and (max-width: 370px) {
@@ -880,5 +895,10 @@ input {
 
     .resume-section {
         grid-template-columns: 4fr 2fr 4fr 4fr;
+    }
+
+    .xxy-link-container img {
+        height: auto;
+        width: 310px;
     }
 }
