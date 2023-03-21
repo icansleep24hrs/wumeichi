@@ -261,6 +261,10 @@ input {
     grid-row: 6 / 7;
 }
 
+#section-content-7 {
+    grid-row: 7 / 8;
+}
+
 .contact-main {
     grid-area: 2 / 2 / 3 / 3;
     font-size: 0.9rem;
