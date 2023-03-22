@@ -194,7 +194,12 @@ input {
     margin-top: 100px;
 }
 
-.chinese-profile, .english-profile, .resume-section, .resume-dates, .resume-content, .contact-main {
+.chinese-profile, 
+.english-profile, 
+.resume-section, 
+.resume-dates, 
+.resume-content, 
+.contact-main {
     font-weight: 300;
     opacity: 0.7;
 }
@@ -291,6 +296,14 @@ input {
     flex-direction: column;
     gap: 30px;
     opacity: 0.7;
+}
+
+.instagram-div a, .facebook-div a {
+    color: black;
+}
+
+.instagram-div a:hover, .facebook-div a:hover {
+    text-decoration: underline;
 }
 
 .copyright-div {
