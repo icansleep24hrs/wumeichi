@@ -337,6 +337,7 @@ input {
 .picnic-slideshow  img, .pandora-slideshow  img, .xxy-slideshow img, .miro-slideshow img {
     position: absolute;
     width: 100%;
+    object-fit: contain;
 }
 
 .picnic-slideshow img, .xxy-slideshow img {
