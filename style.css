@@ -653,6 +653,7 @@ input {
     }
 
     .work-sub-main, .pandora-main, .miro-main {
+        margin-top: 110px;
         grid-template-columns: 1fr;
     }
 
@@ -665,11 +666,11 @@ input {
     }
 
     #love-main{
-        grid-template-rows: 310px auto auto;
+        grid-template-rows: 330px auto auto;
     }
 
     #xxy-main {
-        grid-template-rows: 230px auto auto;
+        grid-template-rows: 260px auto auto;
     }
 
     .picnic-slideshow, .pandora-slideshow, .miro-slideshow {
