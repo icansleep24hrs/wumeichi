@@ -653,8 +653,17 @@ input {
         margin-top: 40px;
     }
 
+    .work-sub-body {
+        margin: 0px 10px;
+    }
+
+    .work-sub-head {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
     .picnic-slideshow, .pandora-slideshow, .miro-slideshow {
-        width: 310px;
+        width: 100%;
     }
 
     .pandora-slideshow img,
