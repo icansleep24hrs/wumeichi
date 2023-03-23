@@ -161,8 +161,9 @@ input {
 }
 
 .work-link-container img, .pub-link-container img {
-    width: 350px;
-    height: 250px;
+    width: 250px;
+    height: 350px;
+    object-fit: cover;
 }
 
 .xxy-link-container img {
