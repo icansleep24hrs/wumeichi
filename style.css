@@ -9,6 +9,12 @@
     font-weight: 300;
 }
 
+@font-face {
+    font-family: 'Lato';
+    src: url('Lato/Lato-Bold.ttf') format('truetype');
+    font-weight: 700;
+}
+
 body {
     margin: 0px;
     font-family: 'Lato', sans-serif;
@@ -50,7 +56,6 @@ a:link {
 }
 
 li > a:link {
-    font-weight: 300;
     opacity: 0.7;
 }
 
@@ -114,6 +119,7 @@ input {
 .artist-name {
     font-size: 1.8rem;
     color: white;
+    font-weight: 700;
 }
 
 .header-links {
