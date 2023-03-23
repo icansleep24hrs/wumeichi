@@ -636,7 +636,7 @@ input {
     }
 
     .pandora-main, .miro-main {
-        grid-template-rows: 350px 60px auto;
+        grid-template-rows: 450px 60px auto;
     }
 
     #love-main{
