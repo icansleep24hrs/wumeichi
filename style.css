@@ -678,6 +678,10 @@ input {
         grid-template-rows: 310px auto auto;
     }
 
+    #xxy-main {
+        grid-template-rows: 230px auto auto;
+    }
+
     .picnic-slideshow, .pandora-slideshow, .miro-slideshow {
         grid-column: 1 / 2;
         grid-row: 1 / 2;
