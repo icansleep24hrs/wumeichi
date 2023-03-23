@@ -103,7 +103,8 @@ input {
 }
 
 .work-main .word-link, .xxy-sub-main .word-link, .pub-main .word-link {
-    opacity: 0.7;
+    opacity: 0.5;
+    font-size: 0.9rem;
 }
 
 .work-main .word-link:hover, .xxy-sub-main .word-link:hover, .pub-main .word-link:hover {
