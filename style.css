@@ -644,7 +644,7 @@ input {
     }
 
     #xxy-main {
-        grid-template-rows: 260px auto auto;
+        grid-template-rows: 300px auto auto;
     }
 
     .picnic-slideshow, .pandora-slideshow, .miro-slideshow {
