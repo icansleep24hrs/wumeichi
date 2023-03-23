@@ -564,7 +564,7 @@ input {
 
 @media only screen and (max-width: 550px) {
     .artist-name {
-        font-size: 1.1rem;
+        font-size: 1rem;
     }
 
     .header-links {
@@ -846,7 +846,7 @@ input {
     }
 
     .artist-name {
-        font-size: 0.9rem;
+        font-size: 0.8rem;
     }
 
     .header-links {
