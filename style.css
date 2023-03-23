@@ -492,6 +492,10 @@ input {
 }
 
 @media only screen and (max-width: 759px) {
+    .artist-name {
+        font-size: 1.6rem;
+    }
+
     .work-main, .pub-main {
         row-gap: 100px;
     }
@@ -526,7 +530,7 @@ input {
 
 @media only screen and (max-width: 630px) {
     .artist-name {
-        font-size: 1.6rem;
+        font-size: 1.5rem;
     }
 
     .header-links {
@@ -553,7 +557,7 @@ input {
 
 @media only screen and (max-width: 550px) {
     .artist-name {
-        font-size: 1.2rem;
+        font-size: 1.1rem;
     }
 
     .header-links {
@@ -571,7 +575,7 @@ input {
 
 @media only screen and (max-width: 460px) {
     .artist-name {
-        font-size: 1rem;
+        font-size: 0.9rem;
     }
 
     .header-links {
